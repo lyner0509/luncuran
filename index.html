@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Luncur Luncuran V2.0</title>
+    <title>Unity WebGL Player | Mamanah</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1920 height=1080></canvas>
+      <canvas id="unity-canvas" width=1080 height=1920></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -22,20 +22,20 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Luncur Luncuran V2.0</div>
+        <div id="unity-build-title">Mamanah</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/LUNCURAN V2.loader.js";
+      var loaderUrl = buildUrl + "/MAMANAH V1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/LUNCURAN V2.data",
-        frameworkUrl: buildUrl + "/LUNCURAN V2.framework.js",
-        codeUrl: buildUrl + "/LUNCURAN V2.wasm",
+        dataUrl: buildUrl + "/MAMANAH V1.data",
+        frameworkUrl: buildUrl + "/MAMANAH V1.framework.js",
+        codeUrl: buildUrl + "/MAMANAH V1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Luncur Luncuran V2.0",
-        productVersion: "1.0",
+        productName: "Mamanah",
+        productVersion: "0.1",
       };
 
       var container = document.querySelector("#unity-container");
@@ -62,10 +62,10 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+        canvas.style.width = "1080px";
+        canvas.style.height = "1920px";
       }
-      canvas.style.background = "url('" + buildUrl + "/LUNCURAN V2.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/MAMANAH V1.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
